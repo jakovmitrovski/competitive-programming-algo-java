@@ -1,7 +1,6 @@
 package aHARD500;
 
 import	java.util.Arrays;
-import java.util.List;
 
 public class LinearOverlap {
 
