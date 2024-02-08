@@ -48,7 +48,7 @@ public class RotateMaze {
 
     public int find(String[] map) {
 
-        int sx = 0, sy = 0, ex = 0, ey = 0;
+        int sx = 0, sy = 0;
         boolean[][][] object = new boolean[4][3][3];
 
         int[] dx = { -1, 1, 0, 0, -1, -1, 1, 1 };
