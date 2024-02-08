@@ -56,10 +56,7 @@ public class RotateMaze {
 
         for (int i = 0; i < map.length; i++)
             for (int j = 0; j < map[0].length(); j++) {
-                if (map[i].charAt(j) == 'X') {
-                    ex = i;
-                    ey = j;
-                } else if (map[i].charAt(j) == 'O') {
+                if (map[i].charAt(j) == 'O') {
                     sx = i;
                     sy = j;
 
@@ -80,7 +77,6 @@ public class RotateMaze {
                         object[0][2][1] = true;
                     if (map[i + 1].charAt(j + 1) == '*')
                         object[0][2][2] = true;
-
                 }
             }
 
