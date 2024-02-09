@@ -1,4 +1,4 @@
-package easiest100;
+package easy100;
 
 public class SumItUp {
     public int sum(int N) {

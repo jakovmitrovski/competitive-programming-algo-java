@@ -1,4 +1,4 @@
-package easiest100;
+package easy100;
 
 import java.util.ArrayList;
 

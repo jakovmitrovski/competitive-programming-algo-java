@@ -14,9 +14,9 @@ public class CharacterShift {
         return sb.toString();
     }
 
-    // public static void main(String[] args) {
-    // CharacterShift c = new CharacterShift();
-    // System.out.println(c.shift("kyaedjapotavsrt", 8));
-    // System.out.println(c.shift("cyipqvskgc", 20));
-    // }
+    public static void main(String[] args) {
+        CharacterShift c = new CharacterShift();
+        System.out.println(c.shift("kyaedjapotavsrt", 8));
+        System.out.println(c.shift("cyipqvskgc", 20));
+    }
 }
