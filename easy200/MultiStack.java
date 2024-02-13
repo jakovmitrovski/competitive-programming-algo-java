@@ -1,16 +1,16 @@
 package easy200;
 
-import java.util.Stack;
+import java.util.*;
 
 public class MultiStack {
     public String getResult(int numStacks, String[] commands) {
 
-        Stack[] stacks = new Stack[numStacks];
+        ArrayList<Stack<Double>> stacks = new ArrayList<>(numStacks);
 
         Double res = 0.00;
 
         for (int i = 0; i < numStacks; i++)
-            stacks[i] = new Stack<Double>();
+            stacks.add(new Stack<Double>());
 
         for (int i = 0; i < commands.length; i++) {
             String[] cmd = commands[i].split(" ");
@@ -18,37 +18,37 @@ public class MultiStack {
                 String[] nums = cmd[1].split(";");
                 int ind = Integer.parseInt(nums[0]);
                 double val = Double.parseDouble(nums[1]);
-                stacks[ind].add(val);
+                stacks.get(ind).add(val);
             } else if (cmd[0].equals("add")) {
                 String[] nums = cmd[1].split(";");
                 int ind1 = Integer.parseInt(nums[0]), ind2 = Integer.parseInt(nums[1]);
-                double a = (double) stacks[ind1].pop();
-                double b = (double) stacks[ind2].pop();
-                stacks[ind1].add(a + b);
+                double a = (double) stacks.get(ind1).pop();
+                double b = (double) stacks.get(ind2).pop();
+                stacks.get(ind1).add(a + b);
             } else if (cmd[0].equals("sub")) {
                 String[] nums = cmd[1].split(";");
                 int ind1 = Integer.parseInt(nums[0]), ind2 = Integer.parseInt(nums[1]);
-                double a = (double) stacks[ind1].pop();
-                double b = (double) stacks[ind2].pop();
-                stacks[ind1].add(a - b);
+                double a = (double) stacks.get(ind1).pop();
+                double b = (double) stacks.get(ind2).pop();
+                stacks.get(ind1).add(a - b);
 
             } else if (cmd[0].equals("mul")) {
                 String[] nums = cmd[1].split(";");
                 int ind1 = Integer.parseInt(nums[0]), ind2 = Integer.parseInt(nums[1]);
-                double a = (double) stacks[ind1].pop();
-                double b = (double) stacks[ind2].pop();
-                stacks[ind1].add(a * b);
+                double a = (double) stacks.get(ind1).pop();
+                double b = (double) stacks.get(ind2).pop();
+                stacks.get(ind1).add(a * b);
 
             } else if (cmd[0].equals("div")) {
                 String[] nums = cmd[1].split(";");
                 int ind1 = Integer.parseInt(nums[0]), ind2 = Integer.parseInt(nums[1]);
-                double a = (double) stacks[ind1].pop();
-                double b = (double) stacks[ind2].pop();
-                stacks[ind1].add(a / b);
+                double a = (double) stacks.get(ind1).pop();
+                double b = (double) stacks.get(ind2).pop();
+                stacks.get(ind1).add(a / b);
 
             } else {
                 int ind = Integer.parseInt(cmd[1]);
-                res = (Double) stacks[ind].pop();
+                res = (Double) stacks.get(ind).pop();
             }
         }
 
