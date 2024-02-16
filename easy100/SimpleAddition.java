@@ -4,7 +4,6 @@ public class SimpleAddition {
     public int smallestNumber(int N, int M, int X) {
         int[] results = new int[100001];
         int[] coins = new int[N + M + 1];
-        int num = 0;
 
         results[0] = 1;
 
