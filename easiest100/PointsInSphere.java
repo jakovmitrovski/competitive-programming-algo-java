@@ -1,4 +1,4 @@
-package easy100;
+package easiest100;
 
 public class PointsInSphere {
     public int howMany(String points, String sphere) {

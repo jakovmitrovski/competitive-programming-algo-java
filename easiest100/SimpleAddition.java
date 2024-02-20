@@ -1,4 +1,4 @@
-package easy100;
+package easiest100;
 
 public class SimpleAddition {
     public int smallestNumber(int N, int M, int X) {

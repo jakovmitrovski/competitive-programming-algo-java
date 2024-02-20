@@ -1,4 +1,4 @@
-package easy100;
+package easiest100;
 
 import java.util.Arrays;
 import java.util.stream.Collectors;

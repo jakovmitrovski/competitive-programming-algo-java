@@ -1,4 +1,4 @@
-package easy100;
+package easiest100;
 
 import java.util.ArrayList;
 import java.util.Comparator;

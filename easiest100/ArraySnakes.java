@@ -1,4 +1,4 @@
-package easy100;
+package easiest100;
 
 public class ArraySnakes {
     public int sharedPositions(int head1, int tail1, int head2, int tail2) {

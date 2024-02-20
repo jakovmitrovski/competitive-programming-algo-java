@@ -1,4 +1,4 @@
-package easy100;
+package easiest100;
 
 import static java.lang.Math.*;
 

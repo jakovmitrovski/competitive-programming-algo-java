@@ -1,4 +1,4 @@
-package easy100;
+package easiest100;
 
 public class CharacterShift {
     public String shift(String word, int n) {

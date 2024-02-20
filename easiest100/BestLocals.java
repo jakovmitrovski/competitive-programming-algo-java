@@ -1,4 +1,4 @@
-package easy100;
+package easiest100;
 
 public class BestLocals {
     public String getLocalBest(int[] points, String[] names, int start, int end) {

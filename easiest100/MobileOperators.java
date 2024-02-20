@@ -1,4 +1,4 @@
-package easy100;
+package easiest100;
 
 public class MobileOperators {
     public String mostlyUsed(String[] numbers) {

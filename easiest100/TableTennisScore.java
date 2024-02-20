@@ -1,4 +1,4 @@
-package easy100;
+package easiest100;
 
 public class TableTennisScore {
     public String whoWon(String score) {
