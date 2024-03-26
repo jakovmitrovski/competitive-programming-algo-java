@@ -1,7 +1,5 @@
 package veryhard400;
 
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -21,7 +19,7 @@ public class Minescape {
     public int escape(String[] maze1) {
 
         char[][] maze = new char[50][20];
-        int n = maze1.length, m = maze1[0].length(), sx = 0, sy = 0, ex = 0, ey = 0, br = 0,
+        int n = maze1.length, sx = 0, sy = 0, ex = 0, ey = 0, br = 0,
                 indx[][] = new int[100][100];
 
         for (int i = 0; i < 100; i++)
